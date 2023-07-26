@@ -15,7 +15,7 @@
     />
     <!-- CDN -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -49,6 +49,7 @@
       <!-- Navbar section -->
       <nav>
         <div class="navbar">
+          <!-- nav start -- for larger - menu item and for smaller - website name -->
           <div class="navbar-start flex">
             <div class="hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -59,11 +60,11 @@
               </ul>
             </div>
 
-            <div class="flex flex-1 justify-between lg:hidden">
+            <div class="lg:hidden">
               <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
             </div>
 
-            <div class="dropdown">
+            <!-- <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost flex flex-1 lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +91,9 @@
                 <li><a>All Fruits</a></li>
                 <li><a class="btn">Button</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
+          <!-- nav center -- for larger - website name and for smaller - hidden -->
           <div class="navbar-center hidden lg:flex">
             <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
             <!-- <ul class="menu menu-horizontal px-1">
@@ -101,8 +103,44 @@
               <li><a>All Fruits</a></li>
             </ul> -->
           </div>
-          <div class="navbar-end hidden lg:flex">
-            <a class="btn">Button</a>
+          <!-- nav end -- for larger - search box and for smaller - dropdown menu icon -->
+          <div class="navbar-end">
+            <div class="hidden lg:flex">
+              <a class="btn">Button</a>
+            </div>
+
+            <div>
+              <div class="dropdown dropdown-end">
+                <!-- dropdown menu icon -->
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <!-- dropdown menu items -->
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                  <li><a class="btn">Button</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
