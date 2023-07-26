@@ -47,21 +47,28 @@
     <!-- Header section -->
     <header class="container mx-auto">
       <!-- Navbar section -->
-      <nav>
-        <div class="navbar">
+      <nav class="mx-2">
+        <div
+          class="navbar mt-5 lg:mt-12 lg:bg-pri-bg-col rounded-t-full rounded-b-full"
+        >
           <!-- nav start -- for larger - menu item and for smaller - website name -->
           <div class="navbar-start flex">
-            <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
+            <div class="ml-4 hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 text-white text-lg font-medium"
+              >
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
               </ul>
             </div>
 
-            <div class="lg:hidden">
-              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            <div class="flex gap-2 items-center lg:hidden">
+              <!-- <img src="./images/logo.png" alt="" />
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a> -->
+              <img class="w-7" src="./images/logo.png" alt="logo" />
+              <p class="text-title-col text-xl font-bold">Fruit Burst</p>
             </div>
 
             <!-- <div class="dropdown">
@@ -94,8 +101,9 @@
             </div> -->
           </div>
           <!-- nav center -- for larger - website name and for smaller - hidden -->
-          <div class="navbar-center hidden lg:flex">
-            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+          <div class="navbar-center hidden lg:flex gap-3 py-3">
+            <img src="./images/logo.png" alt="logo" />
+            <p class="text-white text-4xl font-bold">Fruit Burst</p>
             <!-- <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -106,7 +114,28 @@
           <!-- nav end -- for larger - search box and for smaller - dropdown menu icon -->
           <div class="navbar-end">
             <div class="hidden lg:flex">
-              <a class="btn">Button</a>
+              <!-- <input
+                class="relative mr-8 px-7 py-3 xl:w-[400px] lg:w-auto rounded-t-full rounded-b-full outline-none"
+                type="text"
+                placeholder="Search here"
+              />
+
+              <a class="absolute top-24 right-64" href="">
+                <img src="./icons/search.svg" alt="search-btn" />
+              </a> -->
+              <input
+                class="mr-8 px-7 py-3 xl:w-[400px] lg:w-auto rounded-t-full rounded-b-full outline-none"
+                type="text"
+                placeholder="Search here"
+              />
+
+              <a class="absolute mt-3 ml-48 xl:ml-[350px]" href="">
+                <img src="./icons/search.svg" alt="search-btn" />
+              </a>
+
+              <!-- <div class="">
+                <input type="text" placeholder="Search here" class="" />
+              </div> -->
             </div>
 
             <div>
@@ -137,7 +166,22 @@
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
                   <li><a>All Fruits</a></li>
-                  <li><a class="btn">Button</a></li>
+
+                  <!-- <div class="form-control">
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      class="input input-bordered w-24 md:w-auto"
+                    />
+                  </div> -->
+
+                  <li>
+                    <input type="text" placeholder="Search here" />
+
+                    <a class="absolute mt-0 ml-[150px]" href="">
+                      <img src="./icons/search.svg" alt="search-btn" />
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
