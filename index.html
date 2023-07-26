@@ -51,7 +51,7 @@
         <div
           class="navbar mt-5 lg:mt-12 lg:bg-pri-bg-col rounded-t-full rounded-b-full"
         >
-          <!-- nav start -- for larger - menu item and for smaller - website name -->
+          <!-- nav start -- for larger - menu item and for smaller - website name & logo -->
           <div class="navbar-start flex">
             <div class="lg:ml-2 xl:ml-4 hidden lg:flex">
               <ul
@@ -65,64 +65,20 @@
             </div>
 
             <div class="flex gap-2 items-center lg:hidden">
-              <!-- <img src="./images/logo.png" alt="" />
-              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a> -->
               <img class="w-7" src="./images/logo.png" alt="logo" />
               <p class="text-title-col text-xl font-bold">Fruit Burst</p>
             </div>
-
-            <!-- <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost flex flex-1 lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-                <li><a class="btn">Button</a></li>
-              </ul>
-            </div> -->
           </div>
-          <!-- nav center -- for larger - website name and for smaller - hidden -->
+
+          <!-- nav center -- for larger - website name & logo and for smaller - hidden -->
           <div class="navbar-center hidden lg:flex gap-3 py-3">
             <img src="./images/logo.png" alt="logo" />
             <p class="text-white text-4xl font-bold">Fruit Burst</p>
-            <!-- <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul> -->
           </div>
+
           <!-- nav end -- for larger - search box and for smaller - dropdown menu icon -->
           <div class="navbar-end">
             <div class="hidden lg:flex">
-              <!-- <input
-                class="relative mr-8 px-7 py-3 xl:w-[400px] lg:w-auto rounded-t-full rounded-b-full outline-none"
-                type="text"
-                placeholder="Search here"
-              />
-
-              <a class="absolute top-24 right-64" href="">
-                <img src="./icons/search.svg" alt="search-btn" />
-              </a> -->
               <input
                 class="lg:mr-6 xl:mr-8 px-7 py-3 xl:w-[350px] lg:w-auto rounded-t-full rounded-b-full outline-none"
                 type="text"
@@ -132,10 +88,6 @@
               <a class="absolute mt-3 ml-48 xl:ml-[300px]" href="">
                 <img src="./icons/search.svg" alt="search-btn" />
               </a>
-
-              <!-- <div class="">
-                <input type="text" placeholder="Search here" class="" />
-              </div> -->
             </div>
 
             <div>
@@ -166,15 +118,6 @@
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
                   <li><a>All Fruits</a></li>
-
-                  <!-- <div class="form-control">
-                    <input
-                      type="text"
-                      placeholder="Search"
-                      class="input input-bordered w-24 md:w-auto"
-                    />
-                  </div> -->
-
                   <li>
                     <input type="text" placeholder="Search here" />
 
@@ -188,8 +131,191 @@
           </div>
         </div>
       </nav>
+
       <!-- Banner section -->
-      <div></div>
+      <div class="mx-2 relative">
+        <!-- Slider / Carousel -->
+        <div class="carousel w-full mt-3 lg:mt-14 rounded-lg">
+          <!-- slider 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between items-center transform -translate-y-1/2 left-1.5 right-1.5 top-1/2 lg:left-6 lg:right-6"
+            >
+              <a
+                href="#slide4"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/lesser.svg" alt=""
+              /></a>
+              <!-- Slide overlay text -->
+              <div class="lg:mb-24 xl:mb-28 text-center text-white">
+                <h2
+                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p
+                  class="text-xs font-medium mt-1 mb-2 md:text-base md:font-medium lg:text-xl lg:font-medium md:mt-3 md:mb-4 lg:mt-6 lg:mb-8"
+                >
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="text-sm font-medium px-2 py-1.5 md:text-lg md:font-bold md:px-5 md:py-3 lg:text-xl lg:font-extrabold bg-pri-bg-col rounded-lg lg:px-7 lg:py-4"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a
+                href="#slide2"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/greater.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- slider 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between items-center transform -translate-y-1/2 left-1.5 right-1.5 top-1/2 lg:left-6 lg:right-6"
+            >
+              <a
+                href="#slide1"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/lesser.svg" alt=""
+              /></a>
+              <!-- Slide overlay text -->
+              <div class="lg:mb-24 xl:mb-28 text-center text-white">
+                <h2
+                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p
+                  class="text-xs font-medium mt-1 mb-2 md:text-base md:font-medium lg:text-xl lg:font-medium md:mt-3 md:mb-4 lg:mt-6 lg:mb-8"
+                >
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="text-sm font-medium px-2 py-1.5 md:text-lg md:font-bold md:px-5 md:py-3 lg:text-xl lg:font-extrabold bg-pri-bg-col rounded-lg lg:px-7 lg:py-4"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a
+                href="#slide3"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/greater.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- slider 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between items-center transform -translate-y-1/2 left-1.5 right-1.5 top-1/2 lg:left-6 lg:right-6"
+            >
+              <a
+                href="#slide2"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/lesser.svg" alt=""
+              /></a>
+              <!-- Slide overlay text -->
+              <div class="lg:mb-24 xl:mb-28 text-center text-white">
+                <h2
+                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p
+                  class="text-xs font-medium mt-1 mb-2 md:text-base md:font-medium lg:text-xl lg:font-medium md:mt-3 md:mb-4 lg:mt-6 lg:mb-8"
+                >
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="text-sm font-medium px-2 py-1.5 md:text-lg md:font-bold md:px-5 md:py-3 lg:text-xl lg:font-extrabold bg-pri-bg-col rounded-lg lg:px-7 lg:py-4"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a
+                href="#slide4"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/greater.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- slider 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between items-center transform -translate-y-1/2 left-1.5 right-1.5 top-1/2 lg:left-6 lg:right-6"
+            >
+              <a
+                href="#slide3"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/lesser.svg" alt=""
+              /></a>
+              <!-- Slide overlay text -->
+              <div class="lg:mb-24 xl:mb-28 text-center text-white">
+                <h2
+                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p
+                  class="text-xs font-medium mt-1 mb-2 md:text-base md:font-medium lg:text-xl lg:font-medium md:mt-3 md:mb-4 lg:mt-6 lg:mb-8"
+                >
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="text-sm font-medium px-2 py-1.5 md:text-lg md:font-bold md:px-5 md:py-3 lg:text-xl lg:font-extrabold bg-pri-bg-col rounded-lg lg:px-7 lg:py-4"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a
+                href="#slide1"
+                class="bg-black w-5 h-5 lg:w-10 lg:h-10 rounded-full flex justify-center items-center"
+                ><img src="./icons/greater.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fruit container -->
+        <div
+          class="hidden lg:flex justify-center bg-white w-[75%] rounded-lg shadow-xl absolute -bottom-28 left-32 xl:-bottom-32 xl:left-40 2xl:-bottom-32 2xl:left-48"
+        >
+          <div
+            class="text-center text-name-col text-xl font-medium flex gap-5 xl:gap-16 px-12 py-10 xl:py-16"
+          >
+            <figure>
+              <img src="./images/fruit1.png" alt="Grape Image" />
+              <figcaption>Grape</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/fruit2.png" alt="Orange Image" />
+              <figcaption>Orange</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/fruit3.png" alt="Mango Image" />
+              <figcaption>Mango</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/fruit4.png" alt="Strawberry Image" />
+              <figcaption>Strawberry</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/fruit5.png" alt="Pomegranate Image" />
+              <figcaption>Pomegranate</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Main section -->
     <main></main>
