@@ -41,6 +41,12 @@
       .font-lato {
         font-family: "Lato", sans-serif;
       }
+      .awesome {
+        background-image: linear-gradient(to bottom, #f85559, #fb7185);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: transparent;
+      }
     </style>
   </head>
   <body class="font-lato">
@@ -150,7 +156,7 @@
               <!-- Slide overlay text -->
               <div class="lg:mb-24 xl:mb-28 text-center text-white">
                 <h2
-                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                  class="awesome text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
                 >
                   Exotic tastes at your <br />
                   doorstep
@@ -187,7 +193,7 @@
               <!-- Slide overlay text -->
               <div class="lg:mb-24 xl:mb-28 text-center text-white">
                 <h2
-                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                  class="awesome text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
                 >
                   Exotic tastes at your <br />
                   doorstep
@@ -224,7 +230,7 @@
               <!-- Slide overlay text -->
               <div class="lg:mb-24 xl:mb-28 text-center text-white">
                 <h2
-                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                  class="awesome text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
                 >
                   Exotic tastes at your <br />
                   doorstep
@@ -261,7 +267,7 @@
               <!-- Slide overlay text -->
               <div class="lg:mb-24 xl:mb-28 text-center text-white">
                 <h2
-                  class="text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
+                  class="awesome text-lg font-semibold md:text-4xl lg:text-7xl md:font-extrabold"
                 >
                   Exotic tastes at your <br />
                   doorstep
@@ -293,23 +299,23 @@
           <div
             class="text-center text-name-col text-xl font-medium flex gap-5 xl:gap-16 px-12 py-10 xl:py-16"
           >
-            <figure>
+            <figure class="space-y-2">
               <img src="./images/fruit1.png" alt="Grape Image" />
               <figcaption>Grape</figcaption>
             </figure>
-            <figure>
+            <figure class="space-y-2">
               <img src="./images/fruit2.png" alt="Orange Image" />
               <figcaption>Orange</figcaption>
             </figure>
-            <figure>
+            <figure class="space-y-2">
               <img src="./images/fruit3.png" alt="Mango Image" />
               <figcaption>Mango</figcaption>
             </figure>
-            <figure>
+            <figure class="space-y-2">
               <img src="./images/fruit4.png" alt="Strawberry Image" />
               <figcaption>Strawberry</figcaption>
             </figure>
-            <figure>
+            <figure class="space-y-2">
               <img src="./images/fruit5.png" alt="Pomegranate Image" />
               <figcaption>Pomegranate</figcaption>
             </figure>
@@ -318,7 +324,63 @@
       </div>
     </header>
     <!-- Main section -->
-    <main></main>
+    <main class="container mx-auto">
+      <!-- Deal of the day section -->
+      <section class="mx-2 mt-6 md:mt-12 lg:mt-64">
+        <!-- upper part container flex -->
+        <div
+          class="flex flex-col text-center lg:text-left lg:flex-row lg:justify-between items-center gap-5 md:gap-10"
+        >
+          <!-- title -->
+          <div class="space-y-2 md:space-y-4 lg:space-y-6">
+            <h2
+              class="text-title-col text-xl font-extrabold md:text-4xl lg:text-5xl"
+            >
+              Deal of the day
+            </h2>
+            <p class="text-des-col text-sm md:text-base font-medium">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <!-- countdown timer -->
+
+          <div
+            class="grid grid-flow-col gap-6 text-center auto-cols-max text-des-col text-xs md:text-base font-medium"
+          >
+            <div class="flex flex-col">
+              <span
+                class="countdown text-title-col text-3xl md:text-4xl lg:text-5xl font-extrabold"
+              >
+                <span style="--value: 29"></span></span
+              >Days
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="countdown text-title-col text-3xl md:text-4xl lg:text-5xl font-extrabold"
+              >
+                <span style="--value: 15"></span> </span
+              >Hours
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="countdown text-title-col text-3xl md:text-4xl lg:text-5xl font-extrabold"
+              >
+                <span style="--value: 25"></span> </span
+              >Minutes
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="countdown text-title-col text-3xl md:text-4xl lg:text-5xl font-extrabold"
+              >
+                <span style="--value: 8"></span> </span
+              >Seconds
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer section -->
     <footer></footer>
   </body>
